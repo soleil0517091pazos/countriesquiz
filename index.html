@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <h1>Countries Quiz</h1>
+        <h2>Guess all of the countries!</h2>
+        <br>
+        <input type="text" id="countryInput" onchange="processGuess()" value="Country">
+        <br>
+        <div class="box" id="score"></div>
+        <br>
+        <div class="box" id="check"></div>
+        <br>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <td id="afghanistanTD">
+                    <p id="afghanistan"></p>
+                </td>
+                <td id="albaniaTD">
+                    <p id="albania"></p>
+                </td>
+                <td id="algeriaTD">
+                    <p id="algeria"></p>
+                </td>
+                <td id="andorraTD"> 
+                    <p id="andorra"></p>
+                </td>
+                <td id="angolaTD">
+                    <p id="angola"></p>
+                </td>
+                <td id="antiguaandbarbudaTD">
+                    <p id="antiguaandbarbuda"></p>
+                </td>
+                <td id="argentinaTD">
+                    <p id="argentina"></p>
+                </td>
+                <td id="armeniaTD">
+                    <p id="armenia"></p>
+                </td>
+                <td id="australiaTD">
+                    <p id="australia"></p>
+                </td>
+                <td id="austriaTD">
+                    <p id="austria"></p>
+                </td>
+                <td id="azerbaijanTD">
+                    <p id="azerbaijan"></p>
+                </td>
+                <td id="bahamasTD">
+                    <p id="bahamas"></p>
+                </td>
+                <td id="bahrainTD">
+                    <p id="bahrain"></p>
+                </td>
+                <td id="bangladeshTD">
+                    <p id="bangladesh"></p>
+                </td>
+            </tr> 
+            <tr>
+                <td id="barbadosTD">
+                    <p id="barbados"></p>
+                </td>
+                <td id="belarusTD">
+                    <p id="belarus"></p>
+                </td>
+                <td id="belgiumTD">
+                    <p id="belgium"></p>
+                </td>
+                <td id="belizeTD"> 
+                    <p id="belize"></p>
+                </td>
+                <td id="beninTD">
+                    <p id="benin"></p>
+                </td>
+                <td id="bhutanTD">
+                    <p id="bhutan"></p>
+                </td>
+                <td id="boliviaTD">
+                    <p id="bolivia"></p>
+                </td>
+                <td id="bosniaandherzegovinaTD">
+                    <p id="bosniaandherzegovina"></p>
+                </td>
+                <td id="botswanaTD">
+                    <p id="botswana"></p>
+                </td>
+                <td id="brazilTD">
+                    <p id="brazil"></p>
+                </td>
+                <td id="bruneiTD">
+                    <p id="brunei"></p>
+                </td>
+                <td id="bulgariaTD">
+                    <p id="bulgaria"></p>
+                </td>
+                <td id="burkinafasoTD">
+                    <p id="burkinafaso"></p>
+                </td>
+                <td id="burundiTD">
+                    <p id="burundi"></p>
+                </td>
+            </tr>
+            <tr>
+                <td id="cotedivoireTD">
+                    <p id="cotedivoire"></p>
+                </td>
+                <td id="caboverdeTD">
+                    <p id="caboverde"></p>
+                </td>
+                <td id="cambodiaTD">
+                    <p id="cambodia"></p>
+                </td>
+                <td id="cameroonTD"> 
+                    <p id="cameroon"></p>
+                </td>
+                <td id="canadaTD">
+                    <p id="canada"></p>
+                </td>
+                <td id="centralafricanrepublicTD">
+                    <p id="centralafricanrepublic"></p>
+                </td>
+                <td id="chadTD">
+                    <p id="chad"></p>
+                </td>
+                <td id="chileTD">
+                    <p id="chile"></p>
+                </td>
+                <td id="chinaTD">
+                    <p id="china"></p>
+                </td>
+                <td id="colombiaTD">
+                    <p id="colombia"></p>
+                </td>
+                <td id="comorosTD">
+                    <p id="comoros"></p>
+                </td>
+                <td id="congoTD">
+                    <p id="congo"></p>
+                </td>
+                <td id="costaricaTD">
+                    <p id="costarica"></p>
+                </td>
+                <td id="croatiaTD">
+                    <p id="croatia"></p>
+                </td>
+            </tr>
+            <tr>
+                <td id="cubaTD">
+                    <p id="cuba"></p>
+                </td>
+                <td id="cyprusTD">
+                    <p id="cyprus"></p>
+                </td>
+                <td id="czechiaTD">
+                    <p id="czechia"></p>
+                </td>
+                <td id="democraticrepublicofthecongoTD"> 
+                    <p id="democraticrepublicofthecongo"></p>
+                </td>
+                <td id="denmarkTD">
+                    <p id="denmark"></p>
+                </td>
+                <td id="djiboutiTD">
+                    <p id="djibouti"></p>
+                </td>
+                <td id="dominicaTD">
+                    <p id="dominica"></p>
+                </td>
+                <td id="dominicanrepublicTD">
+                    <p id="dominicanrepublic"></p>
+                </td>
+                <td id="ecuadorTD">
+                    <p id="ecuador"></p>
+                </td>
+                <td id="egyptTD">
+                    <p id="egypt"></p>
+                </td>
+                <td id="elsalvadorTD">
+                    <p id="elsalvador"></p>
+                </td>
+                <td id="equatorialguineaTD">
+                    <p id="equatorialguinea"></p>
+                </td>
+                <td id="eritreaTD">
+                    <p id="eritrea"></p>
+                </td>
+                <td id="estoniaTD">
+                    <p id="estonia"></p>
+                </td>
+            </tr>
+            <tr>
+                <td id="eswatiniTD">
+                    <p id="eswatini"></p>
+                </td>
+                <td id="ethiopiaTD">
+                    <p id="ethiopia"></p>
+                </td>
+                <td id="fijiTD">
+                    <p id="fiji"></p>
+                </td>
+                <td id="finlandTD"> 
+                    <p id="finland"></p>
+                </td>
+                <td id="franceTD">
+                    <p id="france"></p>
+                </td>
+                <td id="gabonTD">
+                    <p id="gabon"></p>
+                </td>
+                <td id="gambiaTD">
+                    <p id="gambia"></p>
+                </td>
+                <td id="georgiaTD">
+                    <p id="georgia"></p>
+                </td>
+                <td id="germanyTD">
+                    <p id="germany"></p>
+                </td>
+                <td id="ghanaTD">
+                    <p id="ghana"></p>
+                </td>
+                <td id="greeceTD">
+                    <p id="greece"></p>
+                </td>
+                <td id="grenadaTD">
+                    <p id="grenada"></p>
+                </td>
+                <td id="guatemalaTD">
+                    <p id="guatemala"></p>
+                </td>
+                <td id="guineaTD">
+                    <p id="guinea"></p>
+                </td>
+            </tr>
+            <tr>
+                <td id="guinea-bissauTD">
+                    <p id="guinea-bissau"></p>
+                </td>
+                <td id="guyanaTD">
+                    <p id="guyana"></p>
+                </td>
+                <td id="haitiTD">
+                    <p id="haiti"></p>
+                </td>
+                <td id="holyseeTD"> 
+                    <p id="holysee"></p>
+                </td>
+                <td id="hondurasTD">
+                    <p id="honduras"></p>
+                </td>
+                <td id="hungaryTD">
+                    <p id="hungary"></p>
+                </td>
+                <td id="icelandTD">
+                    <p id="iceland"></p>
+                </td>
+                <td id="indiaTD">
+                    <p id="india"></p>
+                </td>
+                <td id="indonesiaTD">
+                    <p id="indonesia"></p>
+                </td>
+                <td id="iranTD">
+                    <p id="iran"></p>
+                </td>
+                <td id="iraqTD">
+                    <p id="iraq"></p>
+                </td>
+                <td id="irelandTD">
+                    <p id="ireland"></p>
+                </td>
+                <td id="israelTD">
+                    <p id="israel"></p>
+                </td>
+                <td id="italyTD">
+                    <p id="italy"></p>
+                </td>
+            </tr>
+            <tr>
+                <td id="jamaicaTD">
+                    <p id="jamaica"></p>
+                </td>
+                <td id="japanTD">
+                    <p id="japan"></p>
+                </td>
+                <td id="jordanTD">
+                    <p id="jordan"></p>
+                </td>
+                <td id="kazakhstanTD"> 
+                    <p id="kazakhstan"></p>
+                </td>
+                <td id="kenyaTD">
+                    <p id="kenya"></p>
+                </td>
+                <td id="kiribatiTD">
+                    <p id="kiribati"></p>
+                </td>
+                <td id="kosovoTD">
+                    <p id="kosovo"></p>
+                </td>
+                <td id="kuwaitTD">
+                    <p id="kuwait"></p>
+                </td>
+                <td id="kyrgyzstanTD">
+                    <p id="kyrgyzstan"></p>
+                </td>
+                <td id="laosTD">
+                    <p id="laos"></p>
+                </td>
+                <td id="latviaTD">
+                    <p id="latvia"></p>
+                </td>
+                <td id="lebanonTD">
+                    <p id="lebanon"></p>
+                </td>
+                <td id="lesothoTD">
+                    <p id="lesotho"></p>
+                </td>
+                <td id="liberiaTD">
+                    <p id="liberia"></p>
+                </td>
+            </tr>
+            <tr>
+                <td id="libyaTD">
+                    <p id="libya"></p>
+                </td>
+                <td id="liechtensteinTD">
+                    <p id="liechtenstein"></p>
+                </td>
+                <td id="lithuaniaTD">
+                    <p id="lithuania"></p>
+                </td>
+                <td id="luxembourgTD">
+                    <p id="luxembourg"></p>
+                </td>
+                <td id="madagascarTD"> 
+                    <p id="madagascar"></p>
+                </td>
+                <td id="malawiTD">
+                    <p id="malawi"></p>
+                </td>
+                <td id="malaysiaTD">
+                    <p id="malaysia"></p>
+                </td>
+                <td id="maldivesTD">
+                    <p id="maldives"></p>
+                </td>
+                <td id="maliTD">
+                    <p id="mali"></p>
+                </td>
+                <td id="maltaTD">
+                    <p id="malta"></p>
+                </td>
+                <td id="marshallislandsTD">
+                    <p id="marshallislands"></p>
+                </td>
+                <td id="mauritaniaTD">
+                    <p id="mauritania"></p>
+                </td>
+                <td id="mauritiusTD">
+                    <p id="mauritius"></p>
+                </td>
+                <td id="mexicoTD">
+                    <p id="mexico"></p>
+                </td>
+            </tr>
+            <tr>
+                <td id="micronesiaTD">
+                    <p id="micronesia"></p>
+                </td>
+                <td id="moldovaTD">
+                    <p id="moldova"></p>
+                </td>
+                <td id="monacoTD">
+                    <p id="monaco"></p>
+                </td>
+                <td id="mongoliaTD">
+                    <p id="mongolia"></p>
+                </td>
+                <td id="montenegroTD"> 
+                    <p id="montenegro"></p>
+                </td>
+                <td id="moroccoTD">
+                    <p id="morocco"></p>
+                </td>
+                <td id="mozambiqueTD">
+                    <p id="mozambique"></p>
+                </td>
+                <td id="myanmarTD">
+                    <p id="myanmar"></p>
+                </td>
+                <td id="namibiaTD">
+                    <p id="namibia"></p>
+                </td>
+                <td id="nauruTD">
+                    <p id="nauru"></p>
+                </td>
+                <td id="nepalTD">
+                    <p id="nepal"></p>
+                </td>
+                <td id="netherlandsTD">
+                    <p id="netherlands"></p>
+                </td>
+                <td id="newzealandTD">
+                    <p id="newzealand"></p>
+                </td>
+                <td id="nicaraguaTD">
+                    <p id="nicaragua"></p>
+                </td>
+            </tr>
+            <tr>
+                <td id="nigerTD">
+                    <p id="niger"></p>
+                </td>
+                <td id="nigeriaTD">
+                    <p id="nigeria"></p>
+                </td>
+                <td id="northkoreaTD">
+                    <p id="northkorea"></p>
+                </td>
+                <td id="northmacedoniaTD">
+                    <p id="northmacedonia"></p>
+                </td>
+                <td id="norwayTD"> 
+                    <p id="norway"></p>
+                </td>
+                <td id="omanTD">
+                    <p id="oman"></p>
+                </td>
+                <td id="pakistanTD">
+                    <p id="pakistan"></p>
+                </td>
+                <td id="palauTD">
+                    <p id="palau"></p>
+                </td>
+                <td id="palestinestateTD">
+                    <p id="palestinestate"></p>
+                </td>
+                <td id="panamaTD">
+                    <p id="panama"></p>
+                </td>
+                <td id="papuanewguineaTD">
+                    <p id="papuanewguinea"></p>
+                </td>
+                <td id="paraguayTD">
+                    <p id="paraguay"></p>
+                </td>
+                <td id="peruTD">
+                    <p id="peru"></p>
+                </td>
+                <td id="philippinesTD">
+                    <p id="philippines"></p>
+                </td>
+            </tr>
+            <tr>
+                <td id="polandTD">
+                    <p id="poland"></p>
+                </td>
+                <td id="portugalTD">
+                    <p id="portugal"></p>
+                </td>
+                <td id="qatarTD">
+                    <p id="qatar"></p>
+                </td>
+                <td id="romaniaTD">
+                    <p id="romania"></p>
+                </td>
+                <td id="russiaTD"> 
+                    <p id="russia"></p>
+                </td>
+                <td id="rwandaTD">
+                    <p id="rwanda"></p>
+                </td>
+                <td id="saintkittsandnevisTD">
+                    <p id="saintkittsandnevis"></p>
+                </td>
+                <td id="saintluciaTD">
+                    <p id="saintlucia"></p>
+                </td>
+                <td id="saintvincentandthegrenadinesTD">
+                    <p id="saintvincentandthegrenadines"></p>
+                </td>
+                <td id="samoaTD">
+                    <p id="samoa"></p>
+                </td>
+                <td id="sanmarinoTD">
+                    <p id="sanmarino"></p>
+                </td>
+                <td id="saotomeandprincipeTD">
+                    <p id="saotomeandprincipe"></p>
+                </td>
+                <td id="saudiarabiaTD">
+                    <p id="saudiarabia"></p>
+                </td>
+                <td id="senegalTD">
+                    <p id="senegal"></p>
+                </td>
+            </tr>
+            <tr>
+                <td id="serbiaTD">
+                    <p id="serbia"></p>
+                </td>
+                <td id="seychellesTD">
+                    <p id="seychelles"></p>
+                </td>
+                <td id="sierraleoneTD">
+                    <p id="sierraleone"></p>
+                </td>
+                <td id="singaporeTD">
+                    <p id="singapore"></p>
+                </td>
+                <td id="slovakiaTD"> 
+                    <p id="slovakia"></p>
+                </td>
+                <td id="sloveniaTD">
+                    <p id="slovenia"></p>
+                </td>
+                <td id="solomonislandsTD">
+                    <p id="solomonislands"></p>
+                </td>
+                <td id="somaliaTD">
+                    <p id="somalia"></p>
+                </td>
+                <td id="southafricaTD">
+                    <p id="southafrica"></p>
+                </td>
+                <td id="southkoreaTD">
+                    <p id="southkorea"></p>
+                </td>
+                <td id="southsudanTD">
+                    <p id="southsudan"></p>
+                </td>
+                <td id="spainTD">
+                    <p id="spain"></p>
+                </td>
+                <td id="srilankaTD">
+                    <p id="srilanka"></p>
+                </td>
+                <td id="sudanTD">
+                    <p id="sudan"></p>
+                </td>
+            </tr>
+            <tr>
+                <td id="surinameTD">
+                    <p id="suriname"></p>
+                </td>
+                <td id="swedenTD">
+                    <p id="sweden"></p>
+                </td>
+                <td id="switzerlandTD">
+                    <p id="switzerland"></p>
+                </td>
+                <td id="syriaTD">
+                    <p id="syria"></p>
+                </td>
+                <td id="tajikistanTD"> 
+                    <p id="tajikistan"></p>
+                </td>
+                <td id="tanzaniaTD">
+                    <p id="tanzania"></p>
+                </td>
+                <td id="thailandTD">
+                    <p id="thailand"></p>
+                </td>
+                <td id="timor-lesteTD">
+                    <p id="timor-leste"></p>
+                </td>
+                <td id="togoTD">
+                    <p id="togo"></p>
+                </td>
+                <td id="tongaTD">
+                    <p id="tonga"></p>
+                </td>
+                <td id="trinidadandtobagoTD">
+                    <p id="trinidadandtobago"></p>
+                </td>
+                <td id="tunisiaTD">
+                    <p id="tunisia"></p>
+                </td>
+                <td id="turkeyTD">
+                    <p id="turkey"></p>
+                </td>
+                <td id="turkmenistanTD">
+                    <p id="turkmenistan"></p>
+                </td>
+            </tr>
+            <tr>
+                <td id="tuvaluTD">
+                    <p id="tuvalu"></p>
+                </td>
+                <td id="ugandaTD">
+                    <p id="uganda"></p>
+                </td>
+                <td id="ukraineTD">
+                    <p id="ukraine"></p>
+                </td>
+                <td id="unitedarabemiratesTD">
+                    <p id="unitedarabemirates"></p>
+                </td>
+                <td id="unitedkingdomTD"> 
+                    <p id="unitedkingdom"></p>
+                </td>
+                <td id="unitedstatesofamericaTD">
+                    <p id="unitedstatesofamerica"></p>
+                </td>
+                <td id="uruguayTD">
+                    <p id="uruguay"></p>
+                </td>
+                <td id="uzbekistanTD">
+                    <p id="uzbekistan"></p>
+                </td>
+                <td id="vanuatuTD">
+                    <p id="vanuatu"></p>
+                </td>
+                <td id="venezuelaTD">
+                    <p id="venezuela"></p>
+                </td>
+                <td id="vietnamTD">
+                    <p id="vietnam"></p>
+                </td>
+                <td id="yemenTD">
+                    <p id="yemen"></p>
+                </td>
+                <td id="zambiaTD">
+                    <p id="zambia"></p>
+                </td>
+                <td id="zimbabweTD">
+                    <p id="zimbabwe"></p>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <button id="showAnswers" onclick="showAnswers()">SHOW ANSWERS</button>
+    </body>
+</html>

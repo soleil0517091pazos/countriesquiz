@@ -1,0 +1,65 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+h2{
+    text-align: center;
+}
+#countryInput{
+    height: 40px;
+    width: 400px;
+    font-size: x-large;
+    text-align: center;
+    background-color: rgb(216, 210, 210);
+    color: black;
+    display: inline-block;
+}
+table{
+    border: black 2px solid;
+    background-color: lightgray;
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    border: black 2px solid;
+    height: 70px;
+    width: 70px;
+    background-color: rgba(175, 21, 21, 0.842);
+}
+p{
+    background-color: lightgray;
+    color: black;
+}
+body{
+    background-color: rgb(92, 92, 92);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+}
+.box{
+    background-color: lightgray;
+    height: 40px;
+    width: 350px;
+    border: black 2px solid;
+    display: inline-block;
+    padding-top: 8px;
+}
+#score{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 8px;
+    margin-top: 5px;
+}
+#check{
+    margin-top: 1px;
+}
+#showAnswers{
+    height: 40px;
+    width: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: lightblue;
+    font-size: x-large;
+}
